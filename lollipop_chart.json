@@ -1,0 +1,166 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+   
+    "data": {
+      "url": "https://raw.githubusercontent.com/Min0164/FIT3179-Homework10/main/highest_SR_NA.csv"
+    },
+    "params": [
+      
+      {
+        "name": "Country_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Saint Vincent and the Grenadines",
+            "Canada",
+            "Belize",
+            "United States of America"
+          ],
+          "labels": [
+            "Show All",
+            "Saint Vincent and the Grenadines",
+            "Canada",
+            "Belize",
+            "United States of America"
+          ],
+          "name": "Country Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "Country_selection == null || datum.country == Country_selection"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "Suicide Rate per 100,000 Population",
+        "type": "quantitative",
+        "title" : "Suicide Rate Per 100,000 Population"
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+          "size": {
+            "field": "population",
+            "type": "quantitative",
+            "scale": {
+              "type": "threshold",
+              "domain": [4000000, 9000000, 50000000, 100000000],
+              "range": [200, 500, 1000, 1000, 2000]
+            },
+            "legend": {"format": ".1s"}
+          },
+          "color": {
+            "field": "country",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Saint Vincent and the Grenadines",
+            "Canada",
+            "Belize",
+            "United States of America"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3"
+              ]
+            }
+          },
+          "opacity": {"value": 1},
+          "tooltip": [
+            {"field": "country", "type": "nominal"},
+            {"field": "population", "type": "quantitative", "format": ","},
+            {
+              "field": "Suicide Rate per 100,000 Population",
+              "type": "quantitative",
+              "format": ".2f"
+            }
+          ]
+        }
+      },
+      {
+        
+        "mark": "rule",
+        "encoding": {
+          "size": {
+            "field": "Suicide Rate per 100,000 Population",
+            "type": "quantitative",
+            "legend":null
+          },
+          "color": {
+            "field": "country",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Saint Vincent and the Grenadines",
+            "Canada",
+            "Belize",
+            "United States of America"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3"
+              ]
+            }
+          },
+          
+          "opacity": {"value": 0.8},
+          "tooltip": [
+            {"field": "country", "type": "nominal"},
+            {"field": "population", "type": "quantitative", "format": ","},
+            {
+              "field": "Suicide Rate per 100,000 Population",
+              "type": "quantitative",
+              "format": ".2f"
+            }
+          ]
+        }
+      },
+
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "country", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['country']=='Belize'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal"},
+            {"field": "population", "type": "quantitative", "format": ","},
+            {
+              "field": "Suicide_Rate_per100,000_Population",
+              "type": "quantitative",
+              "format": ".2f"
+            }
+          ]
+        }
+      }
+    ]
+  }
