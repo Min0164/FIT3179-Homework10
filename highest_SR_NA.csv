@@ -1,0 +1,32 @@
+year,country,suicides_no,population,"Suicide Rate per 100,000 Population",CapitalLatitude,CapitalLongitude,ContinentName
+1985,Saint Vincent and the Grenadines,2,6100,32.78688525,13.13333333,-61.216667,Central America
+1986,Canada,3670,23499100,15.6176194,45.41666667,-75.7,Central America
+1987,Canada,3591,23798100,15.08943991,45.41666667,-75.7,Central America
+1988,Canada,3510,24080600,14.57604877,45.41666667,-75.7,Central America
+1989,Canada,3491,24368400,14.3259303,45.41666667,-75.7,Central America
+1990,Saint Vincent and the Grenadines,5,20336,24.58693942,13.13333333,-61.216667,Central America
+1991,Canada,3593,25390400,14.15101771,45.41666667,-75.7,Central America
+1992,Canada,3708,26454400,14.01657191,45.41666667,-75.7,Central America
+1993,Canada,3803,26944700,14.11409294,45.41666667,-75.7,Central America
+1994,Belize,8,40201,19.90000249,17.25,-88.766667,Central America
+1995,Saint Vincent and the Grenadines,7,34192,20.47262518,13.13333333,-61.216667,Central America
+1996,Saint Vincent and the Grenadines,8,39070,20.47606859,13.13333333,-61.216667,Central America
+1997,Canada,3681,28085100,13.10659389,45.41666667,-75.7,Central America
+1998,Saint Vincent and the Grenadines,10,25343,39.45862763,13.13333333,-61.216667,Central America
+1999,Saint Vincent and the Grenadines,6,27546,21.7817469,13.13333333,-61.216667,Central America
+2000,Saint Vincent and the Grenadines,5,22571,22.15231935,13.13333333,-61.216667,Central America
+2001,Saint Vincent and the Grenadines,8,34817,22.97728121,13.13333333,-61.216667,Central America
+2002,Saint Vincent and the Grenadines,7,44845,15.60932099,13.13333333,-61.216667,Central America
+2003,Saint Vincent and the Grenadines,4,26460,15.11715797,13.13333333,-61.216667,Central America
+2004,Belize,20,89857,22.25758705,17.25,-88.766667,Central America
+2005,Saint Vincent and the Grenadines,8,45328,17.64913519,13.13333333,-61.216667,Central America
+2006,Saint Vincent and the Grenadines,6,47036,12.75618675,13.13333333,-61.216667,Central America
+2007,Saint Vincent and the Grenadines,11,33250,33.08270677,13.13333333,-61.216667,Central America
+2008,United States of America,36030,282355565,12.76050642,38.883333,-77,Central America
+2009,United States of America,36900,285162662,12.93998301,38.883333,-77,Central America
+2010,Saint Vincent and the Grenadines,5,18892,26.46622909,13.13333333,-61.216667,Central America
+2011,Belize,33,174247,18.93863309,17.25,-88.766667,Central America
+2012,Saint Vincent and the Grenadines,10,63064,15.85690727,13.13333333,-61.216667,Central America
+2013,United States of America,41143,295322862,13.93153233,38.883333,-77,Central America
+2014,Saint Vincent and the Grenadines,2,10257,19.49887881,13.13333333,-61.216667,Central America
+2015,United States of America,44189,300078511,14.72581287,38.883333,-77,Central America
